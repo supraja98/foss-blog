@@ -1,0 +1,6 @@
+[console_scripts]
+initialize_foss_db = foss.scripts.initializedb:main
+
+[paste.app_factory]
+main = foss:main
+
