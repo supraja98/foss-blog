@@ -99,12 +99,20 @@ input[type=reset] {
 
 </div>
 
-<form method='post'>
+<form method='post' action='/postcomment'>
   <center><h1 style="color:Cornsilk;">Post Your Comments</h1></center>
   <h3 style="color:Cornsilk;">Email: </h3>
-  <input type='text' name='name' id='name' name="username" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+  <input type='text' name='email' id='email' value="{{ one.username }}" readonly="true" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
   <br>
-  <h3 style="color:Cornsilk;">Topic: </h3><input type='text' name='email' id='email' />
+  <h3 style="color:Cornsilk;">Topic: </h3>
+ <!-- <input type='text' name='topic' id='topic' /> -->
+ <select id="topic" name="topic">
+      <option>Linux Distributions</option>
+      <option>Open Source Web Development Tools</option>
+      <option>Open Source Networking Tools</option>
+      <option>Open Source Machine Learning Tools</option>
+      <option>Open Source Multimedia Tools</option>
+   </select>
   <br>
   
   <h3 style="color:Cornsilk">Comment:</h3><br />
