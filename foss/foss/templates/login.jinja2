@@ -241,18 +241,26 @@ a:hover, a:active {
       </div>
       <div class="form-group" id="password">
         <input type="password" class="form-input" tooltip-class="password-tooltip" placeholder="Password" name="pswd"></input>
-      </div> 
+      </div>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <div class="g-recaptcha" data-sitekey="6LeuwS0UAAAAAPkufgM-CaLvFO3jHShGoEXtSNgH"></div>
+      <div class="g-recaptcha" id="captcha" data-sitekey="6LeuwS0UAAAAAPkufgM-CaLvFO3jHShGoEXtSNgH" required="true"></div>
       <div class="form-group">
         
-	 <button type="submit" class="login-button" value="submit">Sign in  </button>
+	 <button type="submit" class="login-button" id="login" value="submit">Sign in  </button>
      <a href="/signup">New User?Sign Up</a>
       </div>
     </form>
   
   </div>
 </div>
-  
+ <script>
+document.getElementById("captcha")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 17) {
+        document.getElementById("login").click();
+    }
+});
+</script>
 </body>
 </html>
