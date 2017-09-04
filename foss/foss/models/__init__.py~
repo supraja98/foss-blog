@@ -9,7 +9,6 @@ from .mymodel import MyModel  # flake8: noqa
 from .userprofile import User
 from .usercomment import Comment
 from .countcmnt import Count
-from .totalcmnt import Total
 # run configure_mappers after defining all of the models to ensure
 # all relationships can be setup
 configure_mappers()

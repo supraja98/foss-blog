@@ -1,0 +1,247 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+#example1 {
+    background-image: url(../static/foss2.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width : 1300;
+    height : 200;
+    padding: 150px;
+}
+#block{
+ display: inline;
+}
+#box1{
+  background-position: center;
+  width: 1000;
+  padding: 200px;
+  background-color: white;
+  margin-left: 125px;
+  
+}
+</style>
+<title>FOSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#E6E6FA">
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/post">Post Comment</a>
+  <a href="/view">View Comment</a>
+  <a href="/">Logout</a>
+  
+</div>
+<div id="example1">
+
+</div>
+<div style="padding-left:16px">
+  <b><center><h1 style="color:blue;" >Hi, {{ one.username }} Welcome to the world of FOSS</h1></center></b>
+<br>
+<br>
+<h2 style="color:brown;">&nbsp;Free Open Source Software</h2>
+<br>
+<br>
+
+<div class="box">
+      
+    <div style="text-align:center"><img src="../static/user_foss.jpg"></div>
+
+    <p>Free Open Source Software. A leading feature now-a-days.</p>
+</div>
+<!--<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">One</li>
+          <li class="list-group-item">Two</li>
+          <li class="list-group-item">Three</li>
+        </ul>
+        <div class="panel-footer">Footer</div>
+      </div>
+    </div>
+  </div>-->
+<div id="box1">
+<div class="box">
+  <h2>Linux Distributions</h2>
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+         <a data-toggle="collapse" href="#collapse1"><b>For new comers</b></a>
+        </h4>
+      </div>
+
+    <div id="collapse1" class="panel-collapse collapse">
+      <ul class="list-group">
+    
+      
+        <ul>
+			<li class="list-group-item"><a href="https://www.ubuntu.com/">Ubuntu</a>
+ 			<li class="list-group-item"><a href="https://www.linuxmint.com/">Linux Mint</a>
+			<li class="list-group-item"><a href="https://www.pclinuxos.com/">PCLinuxOS</a>
+
+
+        </ul>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+         <a data-toggle="collapse" href="#collapse2"><b>For intermediate users</b></a>
+        </h4>
+      </div>
+
+ 
+    <div id="collapse2" class="panel-collapse collapse">
+      <ul class="list-group">
+    
+        
+        <ul>
+			<li class="list-group-item"><a href="https://getfedora.org/">Fedora</a>
+ 			 <li class="list-group-item"><a href="https://www.debian.org/">Debian</a>
+
+        </ul>
+    </ul>
+</div>
+</div>
+</div>
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+         <a data-toggle="collapse" href="#collapse3"><b>For advanced users</b></a>
+        </h4>
+      </div>
+
+ 
+    <div id="collapse3" class="panel-collapse collapse">
+      <ul class="list-group">
+    
+      
+
+        <ul>
+			<li class="list-group-item"><a href="https://www.archlinux.org/">Arch Linux</a>
+			<li class="list-group-item"><a href="www.slackware.com/">Slackware</a>
+
+        </ul>
+    </ul>
+</div>
+</div>
+</div>
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+         <a data-toggle="collapse" href="#collapse4"><b>For servers</b></a>
+        </h4>
+      </div>
+
+ 
+    <div id="collapse4" class="panel-collapse collapse">
+      <ul class="list-group">
+    
+      
+        <ul>
+			<li class="list-group-item"><a href="https://www.centos.org/">CentOS</a>
+			<li class="list-group-item"><a href="https://www.debian.org/">Debian</a>
+			<li class="list-group-item"><a href="https://www.opensuse.org/">Open SUSE</a>
+            
+        </ul>
+    </ul>
+</div>
+</div>
+</div>
+
+    
+   </div>
+</div>
+
+<div class="box">
+    <h2>Open Source Web Development Tools</h2>
+
+    <ul>
+        <li class="list-group-item"><strong>Node.js</strong></li>
+        <ul>
+			<li><a href="https://nodejs.org/">Official website</a>
+			<li><a href="https://goo.gl/images/hgTh6x">Logo</a>
+        </ul>
+
+        <li class="list-group-item"><strong>AngularJS</strong></li>
+        <ul>
+			<li><a href="https://angularjs.org/">Official website</a>
+			<li><a href="https://goo.gl/images/u9mKZH">Logo</a>
+        </ul>
+
+        <li class="list-group-item"><strong>Bootstrap</strong></li>
+        <ul>
+            <li><a href="http://getbootstrap.com/'">Official website</a>
+			<li><a href="https://goo.gl/images/kMaUZM">Logo</a>
+           
+        </ul>
+        <li class="list-group-item"><strong>XAMPP</strong></li>
+        <ul>
+            <li><a href="https://www.apachefriends.org/">Official website</a>
+			<li><a href="https://goo.gl/images/J14diZ">Logo</a>
+            
+        </ul>
+        <li class="list-group-item"><strong>Text editors(Webpage)</strong></li>
+        <ul>
+            <li><a href="http://brackets.io/">Brackets</a>
+			<li><a href="https://atom.io/">Atom</a></li>
+			<li><a href="https://notepad-plus-plus.org/">Notepad++</a>
+            
+        </ul>
+    </ul>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

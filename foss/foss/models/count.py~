@@ -1,0 +1,19 @@
+from sqlalchemy import (
+    Column,
+    Index,
+    Integer,
+    Text,
+)
+
+from .meta import Base
+
+
+class count(Base):
+    __tablename__ = 'count'
+    name = Column(Text, primary_key=True)
+    count = Column(Integer)
+	topic = Column(Text)
+	total = Column(Integer)
+
+
+

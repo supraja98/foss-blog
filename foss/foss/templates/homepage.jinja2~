@@ -27,21 +27,13 @@
     color: white;
 }
 #example1 {
-    background-image: url(../static/fossblog.jpeg) ;
+    background-image: url(../static/foss2.jpeg) ;
     background-position: center;
     background-repeat: no-repeat;
     width : 500;
     height : 200;
     padding: 150px;
 }
-#example2 {
-    background-image: url(../static/fstival.jpg) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 500px;
-	height: 500px;
-}
-
 </style>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,33 +41,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color:brown">
+<body style="background-color:#E6E6FA">
 <div class="topnav">
   <a class="active" href="/">Home</a>
   <a href="/login">Login</a>
-  <a href="/adlogin">Admin Login</a>
   
 </div>
 
 
 <div id="example1">
 
-<img src="../static/gnu.svg" align="right" style="width:200px;height:200px;"></img>
+
 
 </div>
-<h1 style="color: white">GLUCOT</h1>
 
-
-  <h2 style="color: white">About:</h2>
+  <h2>About:</h2>
 
   
-  <h3 style="color: white">This website is designed for sharing and posting about Open Source tools and software by Developers.</h3>
-
-<div id="example3">
-<img src="../static/fstival.jpg" style="width:1300px">
-
-</div>
-   
+  <p>This website is designed for sharing and posting about Open Source tools and software by Developers.</p>
 
 
 

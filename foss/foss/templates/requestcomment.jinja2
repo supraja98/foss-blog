@@ -26,9 +26,6 @@
     background-color: #4CAF50;
     color: white;
 }
-h5{
-  padding-left: 20px;
-}
 #example1 {
     background-image: url(../static/fossblog.jpeg) ;
     background-position: center;
@@ -50,6 +47,27 @@ h5{
 	margin-top: 125px;
 }
 
+input[type=password], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	color: blue;
+}
+input[type=submit] {
+    width: 10%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 </style>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,7 +81,7 @@ h5{
   <a href="/account">My Account</a>
   <a href="/post">Post Comment</a>
   <a href="/">Logout</a>
-  
+  <h4  style="color:white; float:right; margin-right:20px" >{{ one.username }}</h4>
 </div>
 
 
@@ -72,8 +90,19 @@ h5{
 
 
 </div>
+<form  action="/viewcomment" method="POST" >
+<h3 style="color:white">Select option to view topicwise:</h3>
+<select id="topic" name="topic">
+      <option>Linux Distributions</option>
+      <option>Open Source Web Development Tools</option>
+      <option>Open Source Networking Tools</option>
+      <option>Open Source Machine Learning Tools</option>
+      <option>Open Source Multimedia Tools</option>
+   </select>
+<input type='submit' value='View' /> 
+</form>
 <div id="cmnt">
-<h2>Newsfeed</h2>
+<h2>Newsfeed(Overall)</h2>
 
 {% for item in obj %}
 <table>
@@ -82,5 +111,7 @@ h5{
 {% endfor %}
 
 </div>
+
+
 </body>
 </html>

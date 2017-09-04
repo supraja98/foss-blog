@@ -1,6 +1,8 @@
 <html>
 <head>
 
+<title>Admin</title>
+
 <style>
 input[type=submit]:hover {
     background-color: #45a049;
@@ -83,13 +85,11 @@ input[type=reset] {
 
 
 </head>
-<body style="background-color:brown">
+
+<body style="background-color:LightPink">
 <div class="topnav">
   <a class="active" href="/">Home</a>
-  <a href="/account">My Account</a>
-  <a href="/requestcomment">Request Comment</a>
   <a href="/">Logout</a>
-  <h4  style="color:white; float:right; margin-right:20px" >{{ one.username }}</h4>
 </div>
 
 
@@ -99,27 +99,18 @@ input[type=reset] {
 
 </div>
 
-<form method='post' action='/postcomment'>
-  <center><h1 style="color:Cornsilk;">Post Your Comments</h1></center>
-  <h3 style="color:Cornsilk;">Email: </h3>
-  <input type='text' name='email' id='email' value="{{ one.username }}" readonly="true" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
-  <br>
-  <h3 style="color:Cornsilk;">Topic: </h3>
- <!-- <input type='text' name='topic' id='topic' /> -->
- <select id="topic" name="topic">
-      <option>Linux Distributions</option>
-      <option>Open Source Web Development Tools</option>
-      <option>Open Source Networking Tools</option>
-      <option>Open Source Machine Learning Tools</option>
-      <option>Open Source Multimedia Tools</option>
-   </select>
-  <br>
-  
-  <h3 style="color:Cornsilk">Comment:</h3><br />
-  <textarea name='comment' id='comment' rows="7" cols="100"></textarea>
-  <br>
-  <input type='submit' value='Post' />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type='reset' value='Reset' />  
-</form>
+<h1>Overall Top Contributor</h1>
+<h2>{{obj.name}}</h2>
+<h1>Top Contributor in Linux Distributions</h1>
+<h2>{{ld.name}}</h2>
+<h1>Top Contributor in Open Source Web Development Tools</h1>
+<h2>{{web.name}}</h2>
+<h1>Top Contributor in Open Source Networking Tools</h1>
+<h2>{{nw.name}}</h2>
+<h1>Top Contributor in Open Source Machine Learning Tools</h1>
+<h2>{{ml.name}}</h2>
+<h1>Top Contributor in Open Source Multimedia Tools</h1>
+<h2>{{mm.name}}</h2>
+
 </body>
 </html>
