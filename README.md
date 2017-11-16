@@ -1,5 +1,5 @@
-Fstival
-=======
+FOSS BLOG ENGINE
+================
 
 Getting Started
 ---------------
